@@ -1,3 +1,4 @@
+
 body, * {
     padding: 0;
     margin: 0;
@@ -26,8 +27,8 @@ nav ul{
 nav ul li a {
 
     text-decoration: none;
-    font-size: 1.5rem;
-    text-transform: lowercase;
+    font-size: 1.2rem;
+    text-transform: uppercase;
     color: #222;
     transition: 0.3s;
 }
@@ -43,10 +44,10 @@ position: fixed;
 background-color: blue;
 padding: 2px;
 width: 100%;
-height: 47px;
+height: 50px;
 z-index: 10;
 text-align: center;
-margin-top: 40px;
+margin-top: 36px;
  }
 
  header h1{
@@ -80,6 +81,7 @@ height: 570px;
 
 .Welcom h3{
     font-size: 5.8vh;
+    text-align: justify;
     text-transform: uppercase;
     position: absolute;
     left: 3%;
@@ -93,6 +95,88 @@ height: 570px;
     color: #0062ff;
 }
 
+.stats{
+    position: absolute;
+    width:200px;
+    left: 16%;
+    margin-top: 15%;
+}
+
+.stats-section{  
+    padding:80px 40px;
+    background:#111827;
+    color:#fff;
+}
+
+.stats-title{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.stats-title h2{
+    font-size:30px;
+    font-family:Georgia, serif;
+    font-weight:bold;
+}
+
+
+
+
+.line-icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+    color:#c79a4b;
+    font-size:25px;
+}
+
+.line-icon span{
+    width:50px;
+    height:2px;
+    background:#c79a4b;
+}
+
+.stats-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+}
+
+.stats-column{
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+}
+
+.divider{
+    width:2px;
+    height:240px;
+    background:#c79a4b;
+}
+
+.stat-box{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.icon{
+    font-size:20px;
+}
+
+.text h3{
+    font-size:30px;
+    font-weight:700;
+}
+
+.text p{
+    font-size:23px;
+    color:#191818;
+}
+
 
 
 /*main content style*/
@@ -100,12 +184,25 @@ height: 570px;
 
 main.main-content{
     width: 100%;
-    max-width: 940px;
-    margin: 50px 15px;
+    max-width: 1040px;
+    margin: 40px 2px ;
 
 }
 
+section  .apropos{
+    display: flex;
+    gap: 250px;
+    margin-top: 60px;
+}
+
+.section .apropos img{
+    width: 40%;
+    height: 280px;
+    margin-top: -8px;
+}
+
 section h2 {
+    text-align: center;
     margin-top: 3rem;
     margin-bottom: 1rem;
     font-size: 1.8rem;
@@ -116,23 +213,20 @@ section p {
     font-size: 1.4rem;
 }
 
-section .section2 {
-    display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      justify-content: start;
-      width: 100%;
-    
-} 
+
 .section-images{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: start;
-    justify-items: stretch;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-      background-color: #444;
+   background-color: #666;
 margin-left: 10%;
     
 }
+
+details{
+    padding: 10px;
+}
+
 
 .section-images img{
     max-width: 100%;
@@ -148,9 +242,9 @@ section img{
 
 section  .group img{
 width: 70%;
-    margin-left: 20%;
-    margin-right: 20%;
-    height: 70%;
+margin-left: 20%;
+margin-right: 20%;
+height: 70%;
     
 }
 .images{
@@ -173,6 +267,7 @@ width: 70%;
 
 /* FAQ */
 .faq-section {
+    transform: translateX(60px);
     background-color: #444;
     max-width: 880px;
     margin: 50px auto;
@@ -200,6 +295,9 @@ width: 70%;
 .faq-item input {
     display: none;
 }
+
+
+
 
 .faq-item label {
     display: block;
@@ -242,11 +340,13 @@ width: 70%;
 div.services .row{
     display: flex;
     margin-bottom: 2rem;
-
+    margin-left: 50px;
+    gap: 300px;
 }
 
 div.service-title{
     display: flex;
+    
 }
 
 .service-title img{
@@ -278,7 +378,13 @@ margin-top: 10%;
 
 /* Class contact-avocats */
 
+
+section .contact{
+    margin-left: 3%;
+}
+
 section .contact-avocats{
+    transform: translateX(100px);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
@@ -293,25 +399,27 @@ section .contact-avocats .avocat h5 a{
     text-decoration: none;
     color: gray;
 }
-section .form{
-    margin-right: 10%;
-}
+
+/* Formulaire */
+
+
 
  .sectionform{
     position: relative;
     background-image:url(../Images/image1.jpg);
     background-size: cover;
     background-position: center;
-   min-height: 100%;
+   max-height: 100%;
    height: 100%;
+   margin-left: 70px;
 }
 section .form{
     position: absolute;
     height: 65px;
-     width: 69%;
+    width: 69%;
     right: 10%;
     bottom: 80%;
-    left: 50%;
+    left: 30%;
 
 }
  
@@ -360,7 +468,7 @@ form input[type='submit']{
     padding: 10px 24px;
     border-radius: 2rem;
     transition: 0.2s;
-margin-left: 20%;
+margin-left: 35%;
 margin-right: 20%;
 margin-top: 5px;
 }
@@ -369,51 +477,20 @@ form input[type='submit']:hover{
     background-color: darkgray;
 }
 
-.whatsapp{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    right: 30%;
-    left: 30%;
-}
-
-.whatsapp img.logo{
-    height: 55px; 
-    width: 58%;
-     justify-items: center;
-     right: 50%;
-       align-items: center;
-       
-     
-}
-
-
-.whatsapp span.phone{
+.sectionform h2{
+    color: white;
+    padding: 2;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+margin-bottom: 10px;
+margin-top: -8px;
     
 }
-.whatsapp span.phone a{
-    font-size: 30px;
-    font-weight: bold;
-    color: #fff;
-    /* align-items: center; */
-    text-decoration: none;
-    padding-bottom: 20% ;
-    padding-top: 20%;
-    
 
-}
 
-/* div.form{
 
-    position: relative;
-}
 
-div.form form{
 
-    position: absolute;
-    bottom: 23%;
-    left: 50%;
-} */
 
 
 footer{
@@ -437,7 +514,9 @@ footer p a{
 }
 
 
-footer i{
+footer .i {
+    margin-left: 40%;
+    transform: translateX(-200px);
     cursor: pointer;
 }
 
@@ -575,9 +654,7 @@ section .form{
 }
 section .form{
     position: absolute;
-    height: 90px;
-    /* margin-top: 40%; */
-    /* top: 16%; */
+    height: 70px;
     right: 10%;
     bottom: 80%;
     left: 50%;
@@ -641,39 +718,8 @@ form input[type='submit']:hover{
     background-color: darkgray;
 }
 
-.whatsapp{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    right: 30%;
-    left: 30%;
-}
-
-.whatsapp img.logo{
-    height: 40px; 
-    width: 54%;
-     justify-items: center;
-     right: 50%;
-       align-items: center;
-       
-     
-}
 
 
-.whatsapp span.phone{
-    
-}
-.whatsapp span.phone a{
-    font-size: 25px;
-    font-weight: bold;
-    color: #fff;
-    /* align-items: center; */
-    text-decoration: none;
-    padding-bottom: 20% ;
-    padding-top: 20%;
-    
-
-}
 
 
 }
@@ -877,40 +923,8 @@ form input[type='submit']:hover{
     background-color: darkgray;
 }
 
-.whatsapp{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    right: 30%;
-    left: 30%;
-}
-
-.whatsapp img.logo{
-    height: 40px; 
-    width: 54%;
-     justify-items: center;
-     right: 50%;
-       align-items: center;
-       
-      background-color: #619eff7a;
-      border-radius: 15px;
-}
 
 
-.whatsapp span.phone{
-    
-}
-.whatsapp span.phone a{
-    font-size: 25px;
-    font-weight: bold;
-    color: #fff;
-    /* align-items: center; */
-    text-decoration: none;
-    padding-bottom: 20% ;
-    padding-top: 20%;
-    
-
-}
 
     
 }
@@ -921,7 +935,7 @@ form input[type='submit']:hover{
         
     main.main-content{
     width: 100%;
-    max-width:  500px;
+    max-width:  500px !important;
     margin: 50px 10px ;
 
 }
@@ -961,17 +975,14 @@ main.main-content{
  .welcom{
 max-width: 100%;
 width: 100%;
-background-color: white !important;
 position: relative;
 margin: 10px auto;
 height: 570px;
 margin-bottom: 20%;
 
     }
-    .welcom img{
-        background-color: #555;
-        border-radius: 15px;
-    }
+   
+
 
 .Welcom h3{
     font-size: 5vh;
@@ -979,7 +990,6 @@ margin-bottom: 20%;
     position: absolute;
     left: 2%;
     top: 26%;
-    color: #333;
     display: block;
 }
  
@@ -1031,7 +1041,7 @@ margin-bottom: 20%;
 
     main.main-content{
     width: 100%;
-    max-width:  350px;
+    max-width:  400px !important;
     margin: 50px 10px ;
 
 }
@@ -1152,19 +1162,8 @@ form input[type='submit']:hover{
     
 
 }
-/* 
-div.form{
 
-    position: relative;
-}
 
-div.form form{
-
-    position: absolute;
-    bottom: 40%;
-    left: 50%;
-}
-  */
 }
 
 
@@ -1330,7 +1329,6 @@ margin-bottom: 20%;
  .welcom{
 max-width: 100vw;
 width: 100%;
-background-color:white;
 position: relative;
 margin: 10px auto;
 height: 570px;
@@ -1342,89 +1340,6 @@ margin-bottom: 30%;
     margin-right: 30%;
 }
 
-    /* section .form{
-    height: 200px;
-}
- .form form{
-    margin-top: 20%;
-    margin-bottom: 3%;
-    border-radius: 19px;
-    width:56%;
-    padding: 15px;
-    background-color: #0863f4a8;
- }
-
-
- form input[type='text'], form input[type='email'], form textarea{
-    padding: 6px;
-    font-size: 1.1rem;
-    width: 100%;
-    border: solid 2px #ddd;
-    margin: 3px 0;
-    resize: none;
-}
-
-form input[type='submit']{
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: capitalize;
-    border: none;
-    background-color: #fff;
-    color: #0062ff;
-    padding: 10px 10px;
-    border-radius: 2rem;
-    transition: 0.2s;
-margin-left: 20%;
-margin-right: 20%;
-margin-top: 2px;
-}
-
-form input[type='submit']:hover{
-    background-color: darkgray;
-}
-
-.whatsapp{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    right: 30%;
-    left: 30%;
-}
-
-.whatsapp img.logo{
-    height: 38px; 
-    width: 60%;
-     justify-items: center;
-     right: 50%;
-     align-items: center;
-      background-color: #619eff7a;
-    
-}
-
-
-.whatsapp span.phone a{
-    font-size: 26px;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-    padding-bottom: 20% ;
-    padding-top: 20%;
-    
-
-}
-
-div.form{
-
-    position: relative;
-}
-
-div.form form{
-
-    position: absolute;
-    bottom: 40%;
-    left: 50%;
-} 
- */
 
 
 
