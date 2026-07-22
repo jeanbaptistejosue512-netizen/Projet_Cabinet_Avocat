@@ -142,6 +142,7 @@ color: #d4af37 ;
     font-size:30px;
     font-family:Georgia, serif;
     font-weight:bold;
+    transform: translateX(25px);
 }
 
 
@@ -155,6 +156,7 @@ color: #d4af37 ;
     margin-top:20px;
     color:#c79a4b;
     font-size:25px;
+    transform: translateX(25px);
 }
 
 .line-icon span{
@@ -233,6 +235,7 @@ section h2 {
     font-size: 1.8rem;
     color:  #d4af37;
     font-family:Georgia, serif;
+    transform: translateX(125px);
 }
 
 section p {
@@ -379,6 +382,12 @@ height: 70%;
     line-height: 1;
 }
 
+.Exp{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 110%;
+    font-weight: bold;
+}
+
 /* Section service */
 div.services .row{
     display: flex;
@@ -521,6 +530,7 @@ form input[type='submit']:hover{
 }
 
 .sectionform h2{
+    transform: translateX(-10px);
     color: #d4af37;
     padding: 2;
     font-family: sans-serif;
