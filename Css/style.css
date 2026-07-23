@@ -840,8 +840,6 @@ section .form{
 section .form{
     position: absolute;
     height: 90px;
-    /* margin-top: 40%; */
-    /* top: 16%; */
     right: 10%;
     bottom: 80%;
     left: 50%;
@@ -849,7 +847,7 @@ section .form{
 }
 
 section .form{
-    width: 69%;
+    width: 100%;
 }
  
 section form{
