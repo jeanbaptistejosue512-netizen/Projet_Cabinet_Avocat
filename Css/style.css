@@ -484,6 +484,9 @@ margin-top: 10%;
 section .contact{
     margin-left: 3%;
 }
+section p{
+   margin-left: 3%; 
+}
 
 section .contact-avocats{
     transform: translateX(100px);
