@@ -235,7 +235,7 @@ section h2 {
     font-size: 1.8rem;
     color:  #d4af37;
     font-family:Georgia, serif;
-    transform: translateX(125px);
+    transform: translateX(0px);
 }
 
 section p {
@@ -259,6 +259,10 @@ p{
     color: black;
 }
 
+.span{
+    margin-left: 30px;
+}
+
 strong{
     color: white;
 }
@@ -271,6 +275,9 @@ details p{
     color: white;
     font-family: 'Times New Roman', Times, sans-serif;
     font-size: 1.2rem;
+}
+summary{
+    color: white;
 }
 
 
@@ -392,7 +399,7 @@ height: 70%;
 div.services .row{
     display: flex;
     margin-bottom: 2rem;
-    margin-left: 50px;
+    margin-left: 70px;
     gap: 300px;
 }
 
@@ -403,6 +410,7 @@ div.service-title{
 
 .service-title img{
     width: 32px;
+    height: 23px;
     margin-right:8px;
     cursor: pointer;
 }
@@ -429,6 +437,7 @@ margin-top: 10%;
 }
 /* honoraires */
 .honoraires{
+    transform: translateX(50px);
     padding: 50px;
     background:white;
     text-align: center;
