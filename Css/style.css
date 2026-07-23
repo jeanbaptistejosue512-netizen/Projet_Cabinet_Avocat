@@ -395,6 +395,47 @@ margin-top: 10%;
     margin-left: 10%;
     border-radius: 15px;
 }
+/* honoraires */
+.honoraires{
+    padding: 50px;
+    background:white;
+    text-align: center;
+}
+
+.honoriares h2 {
+    color:#1c1c1c
+    font-size:32px;
+}
+
+.intro {
+    color:#555;
+}
+
+.tableau{
+    max-width: 700px;
+    margin:30px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #002;
+}
+
+.ligne{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.titre {
+    background: #0d0d0d;
+    color: #d4af37;
+    font-weight: bold;
+}
+
+.ligne span{
+    width: 50%;
+}
 
 /* Class contact-avocats */
 
