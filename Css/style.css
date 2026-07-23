@@ -5,6 +5,29 @@ body, * {
     box-sizing: border-box;
 }
 
+
+/* Anpeche sit la depase lajè ekran an */
+html,
+body{
+    overflow-x: hidden;
+}
+
+/* Tout imaj yo adapte ak gwosè ekran */
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+/* Evite div yo depase ekran */
+*{
+    max-width:100%;
+}
+
+
+
+
+
 nav{
  background-color:#0d0d0d;
 position: fixed;
@@ -119,6 +142,7 @@ color: #d4af37 ;
     font-size:30px;
     font-family:Georgia, serif;
     font-weight:bold;
+    transform: translateX(25px);
 }
 
 
@@ -132,6 +156,7 @@ color: #d4af37 ;
     margin-top:20px;
     color:#c79a4b;
     font-size:25px;
+    transform: translateX(25px);
 }
 
 .line-icon span{
@@ -210,6 +235,7 @@ section h2 {
     font-size: 1.8rem;
     color:  #d4af37;
     font-family:Georgia, serif;
+    transform: translateX(125px);
 }
 
 section p {
@@ -354,6 +380,12 @@ height: 70%;
 .faq-content p {
     color: #444;
     line-height: 1;
+}
+
+.Exp{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 110%;
+    font-weight: bold;
 }
 
 /* Section service */
@@ -539,6 +571,7 @@ form input[type='submit']:hover{
 }
 
 .sectionform h2{
+    transform: translateX(-10px);
     color: #d4af37;
     padding: 2;
     font-family: sans-serif;
@@ -599,10 +632,21 @@ footer .i {
 
 }
 
+   div.services .row{
+        flex-direction:column;
+        gap:25px;
+        margin-left:0;
+    }
+
+
+
+    
+
+
 
 main.main-content{
     width: 100%;
-    max-width: 700px !important;
+    max-width: 800px !important;
     margin: 50px 15px;
 
 }
@@ -735,47 +779,11 @@ main.main-content{
 @media screen and (max-width: 900px){
 
 
-    *{
-        margin: 0;
-        padding: 0;
-    }
 
-    .Welcom{
-max-width: 100%;
-width: 100%;
- background-color: #1a1a1a;
-position: relative;
-margin: 10px 0px;
-height: 570px;
-
-}
-
-.Welcom h3{
-    font-size: 5.2vh;
-    text-transform: uppercase;
-    position: absolute;
-    left: 2%;
-    top: 32%;
-    /* color: #333; */
-    color: white;
-    display: block;
-}
-
-.Welcom img{
-    max-width: 100%;
-    position: absolute;
-    top: 29.5%;
-    left: 70%;
-    width: 200px;
-    height: 240px;
-
-}
-
-/* margin et un padding dans le corps du travil quand on est arrivé à 900px. main */
-
+    
 main.main-content{
     width: 100%;
-    max-width:  650px;
+    max-width:  800px;
     margin: 50px 10px;
 
 }
@@ -784,12 +792,13 @@ main.main-content{
 /* Centrer la parties profiles des avocats et associés  */
 
 .section-images{
+
     display: grid;
-    grid-template-columns: repeat(5, 1fr) !important;
+    grid-template-columns: repeat(3, 1fr) !important;
     justify-content: start;
     justify-items: stretch;
     gap: 20px;
-      background-color: white;
+      /* background-color: white; */
 
     
 }
@@ -799,52 +808,6 @@ main.main-content{
     height: 250px;
 }
    
-
-/* Experience */
-section img{
-/* Background dans tous les img qui ce trouve dans un section  */
-    background-color: #444;
-}
-
-.images{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-right: 5%;
-}
-
-.images li {
-    list-style-type: none;
-
-    
-}
-.images li img{
-    max-width: 100%;
-    width: 99%;
-    height: 350px;
-     gap: 10px;
-    border: solid 2px #ddd;
-    border-radius: 1rem;
-}
-
-
-
-
-.section img{
-    max-width: 100%;
-    width: 50%;
-    height: 80%;
-    top: 20%;
-    margin-left: 12%;
-    margin-top: 14%;
-    border-radius: 15px;
-
-}
-
-/* ssection background dans tous les images de la classe ssection */
-
-.ssection img{
-    background-color: white;
-}
 
 
 
@@ -979,376 +942,195 @@ height: 570px;
 
 
 }
-@media screen and (max-width:710px){
+
+
+
+
+
+/* ===========================
+   TABLET (768px)
+=========================== */
+
+@media (max-width:768px){
+
+    /* Hero Section */
+
     .Welcom{
-max-width: 100%;
-width: 100%;
- background-color: #1a1a1a;
-position: relative;
-margin: 10px 0px;
-height: 570px;
-
-}
-
-main.main-content{
-    width: 100%;
-    max-width:  600px;
-    margin: 50px 10px ;
-
-}
- .welcom{
-max-width: 100%;
-width: 100%;
-position: relative;
-margin: 10px auto;
-height: 570px;
-margin-bottom: 20%;
-
+        height:auto;
+        padding:170px 20px 50px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
     }
-   
 
+    .Welcom h3{
+        position:static;
+        font-size:2rem;
+        text-align:center;
+        margin-bottom:30px;
+    }
 
-.Welcom h3{
-    font-size: 5vh;
-    text-transform: uppercase;
-    position: absolute;
-    left: 2%;
-    top: 26%;
-    display: block;
+    .Welcom img{
+        position:static;
+        width:250px;
+        height:auto;
+    }
+
+    /* Tableau Statistique */
+
+    .stats-container{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .divider{
+        display:none;
+    }
+
+    .stats-column{
+        width:100%;
+        align-items:center;
+    }
+
+    /* Apropos */
+
+    section .apropos{
+        flex-direction:column;
+        gap:30px;
+        align-items:center;
+    }
+
+    .section .apropos img{
+        width:90%;
+    }
+
+    /* Galerie Avocats */
+
+    .section-images{
+        grid-template-columns:repeat(2,1fr);
+        margin-left:0;
+    }
+
+    /* Services */
+
+    div.services .row{
+        flex-direction:column;
+        gap:25px;
+        margin-left:0;
+    }
+
+    /* Contact Avocats */
+
+    section .contact-avocats{
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
+        transform:none;
+    }
+
+    /* Formulaire */
+
+    .sectionform{
+        margin-left:0;
+    }
+
+    section .form{
+        position:static;
+        width:100%;
+    }
+
+    section form{
+        width:95%;
+        margin:auto;
+    }
+
 }
- 
 
 
+/*== MOBILE (480px)==*/
 
-.section-images{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-      background-color: white;
+@media (max-width:480px){
 
-    
-}
+    /* Navbar */
 
-.section-images img{
-    max-width: 100%;
-    height: 10%;
-}
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px;
+    }
 
+    nav ul li a{
+        font-size:.9rem;
+    }
 
-/* experience */
+    /* Titre */
 
- .images{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-right: 2%;
-}
+    header h1{
+        font-size:1.3rem;
+    }
 
-.images li {
-    list-style-type: none;
+    /* Hero */
 
-    
-}
-.images li img{
-    max-width: 100%;
-    width: 99%;
-    height: 320px;
-     gap: 10px;
-    border: solid 2px #ddd;
-    border-radius: 1rem;
-}  
-
-}
-
-/* Responsive sur tablet(650 a 545 */
-
-@media screen and (max-width:650px){
     .Welcom{
-max-width: 100%;
-width: 100%;
- background-color: #1a1a1a;
-position: relative;
-margin: 10px 0px;
-height: 570px;
+        padding-top:150px;
+    }
 
-}
+    .Welcom h3{
+        font-size:1.5rem;
+    }
 
-    main.main-content{
-    width: 100%;
-    max-width:  400px !important;
-    margin: 50px 10px ;
+    .Welcom img{
+        width:180px;
+    }
 
-}
-.welcom img{
-    max-width: 100%;
-    position: absolute;
-    top: 48% !important;
-    left: 58% !important;
-    width: 200px;
-    height: 240px;
-
-}
+    /* Profil Avocats */
 
 
-.section2 .section-image img{
-    width: 140px !important;
-    height: 152px !important;
+    .section-images{
+        grid-template-columns:1fr;
+        display: block;
+    }
 
-}
-
-  .section  .group img{
-width: 79%;
-    margin-left: 30%;
-    margin-right: 30%;
-    height: 40vh;
-    
-}
-
-.section-images img{
-    max-width: 100%;
-    height: 30%;
-}
-
- 
-}
-
-
-
-@media screen and (max-width:570px){
-  section  .group img{
-width: 60%;
-    margin-left: 30%;
-    margin-right: 30%;
-    height: 40vh;
-    
-}
-
-/* form */
-
-
-
-
-
-}
-
-
-@media screen and (max-width:545px){
-
-    /* navbar  */
-
-    nav{
- background-color: darkgray;
-position: fixed;
-padding: 4px;
-width: 100%;
-z-index: 10;
-text-align: center;
-margin-top: -10px;
-
-}
-
-nav ul{
-
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    padding: 5px;
-}
-
-nav ul li a {
-
-    text-decoration: none;
-    font-size: 3vw;
-    text-transform: lowercase;
-    color: #222;
-    transition: 0.3s;
-}
-
-nav ul li a:hover{
-    background-color: rgb(239, 246, 55);
-    padding: 2px 7px;
-    border-radius: 15px;
-}
-/* Header */
-header{
-position: fixed;
-background-color: blue;
-padding: 1vh;
-width: 100%;
-height: 50px;
-z-index: 10;
-text-align: center;
-margin-top: 5vh;
- }
-
- header h1{
-    text-transform: uppercase;
-    font-size: 6vw;
-    font-weight: bold;
-    display: block;
-    padding: 2px 15px;
-    color:  #fff;
-    text-shadow: -2px -1px 12px;
- }
-
-
-
-  section  .group img{
+    /* groupes */
+    section  .group img{
 width: 70vw;
-    margin-left: 30%;
-    margin-right: 30%;
-    height: 60vh;
+
+height: 45%;
     
 }
- 
-}
 
-@media screen and (max-width: 900px){
+    /* Experience */
 
-.welcom{
-max-width: 100vw;
-width: 100%;
-/* background-color:white; */
- background-color: #444;
-position: relative;
-margin: 10px auto;
-height: 544px;
-margin-bottom: 20%;
-
+    .images{
+        grid-template-columns:1fr;
     }
 
+    /* Contact */
 
-.Welcom img{
-    position: absolute;
-    top: 45%;
-    left: 70%;
-    width: 200px;
-    height: 300px;
-}
+    section .contact-avocats{
+        grid-template-columns:1fr;
+    }
 
+    /* FAQ */
 
-.section-images{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: start;
-    justify-items: stretch;
-    gap: 20px;
-      background-color: white;
+    .faq-section{
+        transform:none;
+        width:95%;
+        padding:20px;
+    }
 
-    
-}
+    /* Bouton formulaire */
 
-.section-images img{
-    max-width: 100%;
-    height: 290px;
-}
-
-}
-@media screen and (max-width: 388px){
-.Welcom img{
-    position: absolute;
-    top: 55% !important;
-    left: 85%;
-    width: 200px;
-    height: 240px;
-    border-radius: 50%;
-     background-color: #444;
-}
-
-
-}
-
-@media screen and (max-width: 340px){
-.Welcom img{
-    position: absolute;
-    top: 50%;
-    left: 85%;
-    width: 200px;
-    height: 240px;
-    border-radius: 50%;
-     background-color: #444;
-}
-
-  .Welcom h3{
-    position: absolute;
-    left: 20px;
-    top: 20%;
-  }
-    
-
-}
-
-@media screen and (max-width: 678px){
-  .Welcom h3{
-    left: 20px;
-    top: 23%;
-  }
-
-
+    form input[type="submit"]{
+        width:100%;
+        margin:10px 0;
+    }
 
 }
 
 
 
-@media screen and (max-width: 665px){
-
-
-.Welcom{
-max-width: 100%;
-width: 100%;
- background-color: #1a1a1a;
-position: relative;
-margin: 10px auto;
-height: 570px;
-
-}
-
-.welcom img{
-    margin-right: 30%;
-}
 
 
 
-
-  
-section .form{
-    margin-right: 10%;
-}
-
- .sectionform{
-    position: relative;
-    background-image:url(../Images/image1.jpg);
-    background-size: cover;
-    background-position: center;
-   min-height: 100%;
-   height: 100%;
-}
-section .form{
-    position: absolute;
-    height: 90px;
-    /* margin-top: 40%; */
-    /* top: 16%; */
-    right: 10%;
-    bottom: 80%;
-    left: 50%;
-
-}
-
-section .form{
-    width: 69%;
-}
- 
-section form{
-    border: solid 2px #d4af37;
-    border-radius: 19px;
-    width:60%;
-    min-height: 10%;
-    padding: 12px;
-    background-color:rgba(0,0,0,0.5) ;
-}
-
-
-
-
-
-
-}
