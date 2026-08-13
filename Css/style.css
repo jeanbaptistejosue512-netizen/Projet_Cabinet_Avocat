@@ -17,6 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  
 }
 
 html {
@@ -27,7 +28,7 @@ body {
     font-family: var(--font-main);
     color: var(--text-dark);
     line-height: 1.4;
-    background-color: var(--white);
+    background-color: var(--text-dark);
 }
 
 a {
@@ -126,7 +127,7 @@ img {
 }
 
 .main-title{
-background-color: #0d0d0d;
+background-color:  #d4af37;
 padding:8px;
 align-items:center;
 width: 100%;
@@ -136,6 +137,12 @@ justify-content: center;
 position: fixed;
 border-top: 2px solid #d4af37;
 }
+
+.main-title h1{
+    font-size: 25px;
+}
+
+
 .logo-text {
   text-align: center;
   line-height: 1.1;
@@ -168,7 +175,7 @@ border-top: 2px solid #d4af37;
 .Welcom{
 max-width: 100%;
 width: 100%;
- background-color: #1a1a1a;
+background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/image1.jpg);
 position: relative;
 margin: 10px 0px;
 height: 570px;
@@ -185,7 +192,7 @@ height: 570px;
 }
 
 .Welcom h3{
-    font-size: 5.4vh;
+    font-size: 1.3rem;
     text-align: justify;
     text-transform: uppercase;
     position: absolute;
@@ -292,8 +299,10 @@ color: #d4af37 ;
 
 main.main-content{
     width: 100%;
-    max-width: 1040px;
-    margin: 40px 2px ;
+    /* max-width: 1040px; */
+    margin: auto ;
+
+        width: min(1120px, 92%);
 
 }
 
@@ -325,11 +334,11 @@ section p {
 
 
 .section-images{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-   background-color: rgba(0, 0, 0, 0.842);
-margin-left: 10%;
+    display: flex;
+ gap: 60px;
+margin: 0, auto;
+justify-content: center;
+align-items: center;
     
 }
 
@@ -367,24 +376,22 @@ summary{
     height: 290px;
 }
 section img{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+ 
     
 }
 
 /* Div groupes */
 
-section  .group img{
-width: 70%;
-margin-left: 20%;
-margin-right: 20%;
-height: 70%;
-    
-}
+
+
 .images{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-      /* box-shadow: 0 0 5px gray; */
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 5px  #d4af37;
+    margin: 20px 30px;
+    gap: 20px;
+    padding-bottom: 25px;
+    background-color:#161615;
 }
 
 .images li {
@@ -393,20 +400,26 @@ height: 70%;
 }
 .images li img{
     width: 100%;
-    height: 400px;
-     gap: 20px;
-    border: solid 2px #ddd;
+    height: 300px;
+     gap: -20px;
+    border: solid 2px #d4af37;
     border-radius: 1rem;
+  
+    cursor: pointer;
+}
+
+.images li img:hover{
+  transform: translatey(-5px);
 }
 
 /* FAQ */
 .faq-section {
-    transform: translateX(60px);
+    /* transform: translateX(60px); */
     background-color: #444;
     max-width: 880px;
     margin: 50px auto;
     background: #fdfbfb;
-    padding: 30px;
+    padding: 30px 40px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
@@ -499,7 +512,7 @@ div.service-title{
 div.service-title h3{
     font-size: 1.5rem;
     margin-left: 10px;
-    color: #444;
+    color: rgb(246, 243, 243);
 }
 
 div.services p{
@@ -516,29 +529,36 @@ margin-top: 10%;
     margin-left: 10%;
     border-radius: 15px;
 }
+
 /* honoraires */
 .honoraires{
-    transform: translateX(50px);
     padding: 50px;
-    background:white;
+    background:rgb(88, 87, 87);
     text-align: center;
 }
 
 .honoriares h2 {
-    color:#1c1c1c
+    color:#d6d466;
     font-size:32px;
 }
 
 .intro {
-    color:#555;
+    color:#eef1d17d;
 }
 
 .tableau{
-    max-width: 700px;
+    max-width: 900px;
     margin:30px auto;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px #002;
+}
+
+.tableau :hover{
+    transition: 0.3s;
+    background-color: #1e2a38;
+    cursor: pointer;
+    color: white;
 }
 
 .ligne{
@@ -570,7 +590,7 @@ section p{
 }
 
 section .contact-avocats{
-    transform: translateX(100px);
+    /* transform: translateX(100px); */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
@@ -583,7 +603,7 @@ height: 250px;
 }
 section .contact-avocats .avocat h5 a{
     text-decoration: none;
-    color: gray;
+    color:white;
 }
 
 /* Formulaire */
@@ -591,22 +611,15 @@ section .contact-avocats .avocat h5 a{
 
 
  .sectionform{
-    position: relative;
     background-image:url(../Images/image1.jpg);
     background-size: cover;
     background-position: center;
    max-height: 100%;
    height: 100%;
-   margin-left: 70px;
+   margin: 0%;
 }
 section .form{
-    position: absolute;
-    height: 65px;
-    width: 69%;
-    right: 10%;
-    bottom: 80%;
-    left: 30%;
-
+    
 }
  
 section form{
@@ -615,7 +628,7 @@ section form{
     width:60%;
     min-height: 10%;
     padding: 12px;
-    background-color: rgba(0,0,0,0.5);
+    background-color:  #d4af37;
 }
 
 .form label{
@@ -650,10 +663,11 @@ form input[type='submit']{
     text-transform: capitalize;
     border: none;
     background-color: #fff;
-    color:  #d4af37;
+    color: rgba(0, 0, 0, 0.662);
     padding: 10px 24px;
     border-radius: 2rem;
     transition: 0.2s;
+
 margin-left: 35%;
 margin-right: 20%;
 margin-top: 5px;
@@ -665,7 +679,7 @@ form input[type='submit']:hover{
 
 .sectionform h2{
     transform: translateX(-10px);
-    color: #d4af37;
+    color: rgba(0, 0, 0, 0.662);
     padding: 2;
     font-family: sans-serif;
     font-size: 1.4rem;
@@ -684,7 +698,8 @@ footer{
     width:100%;
     background-color: #0d0d0d ;
     color: #fff;
-    margin-bottom:-10%;
+    margin-bottom:10px;
+    margin-top: 20pox;
 }
 
 footer p{
@@ -710,325 +725,114 @@ footer .i {
 }
 
 
-/* Responsive sur desktop(943 a 710) */
 
-@media screen  and (max-width: 1000px){
-    .Welcom h3{
-    font-size: 5.1vh;
-    text-transform: uppercase;
-    position: absolute;
-    left: 2%;
-    top: 32%;
-    /* color: #333; */
-    color: white;
-    display: block;
 
-}
+@media (max-width: 993px) {
 
-   div.services .row{
-        flex-direction:column;
-        gap:25px;
-        margin-left:0;
+    /* Bouton 3 lignes */
+    .menu-toggle {
+        display: block;
+        border: none;
+        background: #d4af37;
+        font-size: 30px;
+        color: var(--navy);
+        cursor: pointer;
+        z-index: 100;
     }
 
+    /* Meni a kache */
+    .nav-links {
+        display: none;
 
+        position: absolute;
+        top: 76px;
+        left: 0;
+        width: 100%;
 
+        background: rgb(35, 34, 34);
+        z-index: 40;
+
+        flex-direction: column;
+        gap: 0;
+
+        padding: 10px 5%;
+
+        box-shadow: 0 8px 20px #0303036d;
+    }
+
+    /* Lè JavaScript mete .show */
+    .nav-links.show {
+        display: flex;
+    }
+
+    /* Chak lien */
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    /* Retire ti liy active anba lien yo */
+    .nav-links a.active::after {
+        display: none;
+    }
+
+    /* Autres éléments responsive */
+    .cards,
+    .menu-grid,
+    .gallery,
+    .info-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section-images {
+        grid-template-columns: 1fr;
+    }
+
+   
     
-
-
-
-main.main-content{
-    width: 100%;
-    max-width: 800px !important;
-    margin: 50px 15px;
-
 }
 
-
-.Welcom{
-max-width: 100%;
-width: 100%;
- background-color: #1a1a1a;
-position: relative;
-margin: 10px 0px;
-height: 570px;
-
+@media(max-width: 840px){
+.images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 }
 
-@media screen and (max-width: 943px) {
 
-/* responsite du main.main-content */
 
-.Welcom{
-max-width: 100%;
-width: 100%;
- background-color: #1a1a1a;
-position: relative;
-margin: 10px 0px;
-height: 570px;
-
+@media(max-width: 760px){
+.Welcom img {
+    display: grid;
+    grid-template-columns: repeat(1fr);
 }
-
-.Welcom h3{
-    font-size: 5.2vh;
-    text-transform: uppercase;
-    position: absolute;
-    left: 2%;
-    top: 32%;
-    /* color: #333; */
-    color: white;
-    display: block;
-}
-
-
-main.main-content{
-    width: 100%;
-    max-width: 700px !important;
-    margin: 50px 15px;
-
-}
-
-
-
-/* FAQ */
-.faq-section {
-    background-color: #444;
-    max-width: 880px;
-    margin: 50px auto;
-    background: #fdfbfb;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-}
-
-.faq-section h1 {
-    font-size: 3vw;
-    text-align: center;
-    color: #1e2a38;
-}
-.faq-intro {
-    font-size: 2vw;
-    text-align: center;
-    color: #555;
-    margin-bottom: 30px;
-}
-
-.faq-item {
-    border-bottom: 1px solid #ddd;
-}
-
-.faq-item input {
-    display: none;
-}
-
-.faq-item label {
-    display: block;
-    padding: 15px;
-    font-weight: bold;
-    color: #1e2a38;
-    cursor: pointer;
-    position: relative;
-    font-size: 2vw;
-}
-
-.faq-item label::after {
-    content: "+";
-    position: absolute;
-    right: 20px;
-    font-size: 20px;
-}
-
-.faq-item input:checked + label::after {
-    content: "-";
-}
-
-.faq-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    padding: 0 15px;
-}
-
-.faq-item input:checked ~ .faq-content {
-    max-height: 200px;
-    padding-bottom: 15px;
-}
-
-.faq-content p {
-    color: #444;
-    line-height: 1;
-}
-
-    /* form */
-
-
-    
-
-
-
-}
-
-@media screen and (max-width: 900px){
-
-
-
-    
-main.main-content{
-    width: 100%;
-    max-width:  800px;
-    margin: 50px 10px;
-
-}
-
-
-/* Centrer la parties profiles des avocats et associés  */
 
 .section-images{
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) !important;
-    justify-content: start;
-    justify-items: stretch;
-    gap: 20px;
-      /* background-color: white; */
-
-    
-}
-
-.section-images img{
-    max-width: 100%;
-    height: 250px;
-}
-   
-
-
-
-/* form */
- 
-section .form{
-    margin-right: 10%;
-}
-
- .sectionform{
-    position: relative;
-    background-image:url(../Images/image1.jpg);
-    background-size: cover;
-    background-position: center;
-   min-height: 100%;
-   height: 100%;
-}
-section .form{
-    position: absolute;
-    height: 90px;
-    right: 10%;
-    bottom: 80%;
-    left: 50%;
-
-}
-
-section .form{
-    width: 100%;
-}
- 
-section form{
-    border: solid 2px #d4af37;
-    border-radius: 19px;
-    width:60%;
-    min-height: 10%;
-    padding: 12px;
-    background-color: rgba(0,0,0,0.5);
-}
-
-.form label{
-    color:white;
-    padding: 8px;
-    font-size: 1.3rem;
-     resize: none;
-}
-
-select{
-    background-color: white ;
-    width: 100%;
-    padding:6px;
-    margin: 4px 0;
-    font-size:1.1rem;
-    border: 2px solid #ddd;
-    resize: none;
-}
-
-form input[type='text'], form input[type='email'], form input[type='tel'],form input[type='date'], form textarea{
-    padding: 6px;
-    font-size: 1.1rem;
-    width: 100%;
-    border: solid 2px #ddd;
-    margin: 2px 2px;
-    resize: none;
-}
-
-form input[type='submit']{
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-transform: capitalize;
-    border: none;
-    background-color: #fff;
-    color: #0062ff;
-    padding: 10px 24px;
-    border-radius: 2rem;
-    transition: 0.2s;
-margin-left: 20%;
-margin-right: 20%;
-}
-
-form input[type='submit']:hover{
-    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
-
-
-    
 }
 
+@media(max-width: 560px) {
 
-@media screen and (max-width:843px){
-  .Welcom{
-max-width: 100%;
-width: 100%;
- background-color: #1a1a1a;
-position: relative;
-margin: 10px 0px;
-height: 570px;
-
-}
-        
-    main.main-content{
-    width: 100%;
-    max-width:  500px !important;
-    margin: 50px 10px ;
-
-}
-}
-
-
-@media screen and (max-width:840px){
-
-    
-    main.main-content{
-    width: 100%;
-    max-width:  500px;
-    margin: 50px 10px ;
-
-}
-.section-images img{
-    max-width: 100%;
-    height: 30%;  
-}
-
-.section2 .section-image img{
-    width: 220px !important;
-    height: 250px !important;
-
+.images li img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 300px;
+    padding: 20px auto;
 }
 
 
@@ -1036,189 +840,18 @@ height: 570px;
 
 
 
+@media(max-width: 376px) {
 
+.images li img{
+    width: 80%;
+    height: 300px;
+    padding: 20px auto;
+}
 
-/* ===========================
-   TABLET (768px)
-=========================== */
-
-@media (max-width:768px){
-
-    /* Hero Section */
-
-    .Welcom{
-        height:auto;
-        padding:170px 20px 50px;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:center;
-        text-align:center;
-    }
-
-    .Welcom h3{
-        position:static;
-        font-size:2rem;
-        text-align:center;
-        margin-bottom:30px;
-    }
-
-    .Welcom img{
-        position:static;
-        width:250px;
-        height:auto;
-    }
-
-    /* Tableau Statistique */
-
-    .stats-container{
-        flex-direction:column;
-        gap:30px;
-    }
-
-    .divider{
-        display:none;
-    }
-
-    .stats-column{
-        width:100%;
-        align-items:center;
-    }
-
-    /* Apropos */
-
-    section .apropos{
-        flex-direction:column;
-        gap:30px;
-        align-items:center;
-    }
-
-    .section .apropos img{
-        width:90%;
-    }
-
-    /* Galerie Avocats */
-
-    .section-images{
-        grid-template-columns:repeat(2,1fr);
-        margin-left:0;
-    }
-
-    /* Services */
-
-    div.services .row{
-        flex-direction:column;
-        gap:25px;
-        margin-left:0;
-    }
-
-    /* Contact Avocats */
-
-    section .contact-avocats{
-        grid-template-columns:repeat(2,1fr);
-        gap:20px;
-        transform:none;
-    }
-
-    /* Formulaire */
-
-    .sectionform{
-        margin-left:0;
-    }
-
-    section .form{
-        position:static;
-        width:100%;
-    }
-
-    section form{
-        width:95%;
-        margin:auto;
-    }
 
 }
 
 
-/*== MOBILE (480px)==*/
-
-@media (max-width:480px){
-
-    /* Navbar */
-
-    nav ul{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:10px;
-    }
-
-    nav ul li a{
-        font-size:.9rem;
-    }
-
-    /* Titre */
-
-    header h1{
-        font-size:1.3rem;
-    }
-
-    /* Hero */
-
-    .Welcom{
-        padding-top:150px;
-    }
-
-    .Welcom h3{
-        font-size:1.5rem;
-    }
-
-    .Welcom img{
-        width:180px;
-    }
-
-    /* Profil Avocats */
-
-
-    .section-images{
-        grid-template-columns:1fr;
-        display: block;
-    }
-
-    /* groupes */
-    section  .group img{
-width: 70vw;
-
-height: 45%;
-    
-}
-
-    /* Experience */
-
-    .images{
-        grid-template-columns:1fr;
-    }
-
-    /* Contact */
-
-    section .contact-avocats{
-        grid-template-columns:1fr;
-    }
-
-    /* FAQ */
-
-    .faq-section{
-        transform:none;
-        width:95%;
-        padding:20px;
-    }
-
-    /* Bouton formulaire */
-
-    form input[type="submit"]{
-        width:100%;
-        margin:10px 0;
-    }
-
-}
 
 
 
