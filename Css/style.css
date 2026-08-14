@@ -111,6 +111,23 @@ img {
   width: 100%;
 }
 
+/* section page-hero */
+
+.page-hero {
+    background-image: url(../Images/image2.jpg) ;
+background-size: cover;
+background-position: center;
+    color:  #d4af37;
+    padding: 90px 10px;
+
+}
+
+.page-hero h1 {
+    font-size: 40px;
+}
+
+
+
 /* Logo nan mitan */
 .logo-container a {
   display: flex;
@@ -301,28 +318,31 @@ main.main-content{
     width: 100%;
     /* max-width: 1040px; */
     margin: auto ;
-
-        width: min(1120px, 92%);
+   width: min(1120px, 92%);
 
 }
 
 section  .apropos{
     display: flex;
-    gap: 250px;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
     margin-top: 60px;
+    padding: 20px 10px;
 }
 
 .section .apropos img{
-    width: 40%;
-    height: 280px;
-    margin-top: -8px;
+    width: 70%;
+    height: 300px;
+    margin-top: -6px;
 }
 
 section h2 {
     text-align: center;
+    text-transform: uppercase;
     margin-top: 3rem;
     margin-bottom: 1rem;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color:  #d4af37;
     font-family:Georgia, serif;
     transform: translateX(0px);
@@ -334,7 +354,7 @@ section p {
 
 
 .section-images{
-    display: flex;
+display: flex;
  gap: 60px;
 margin: 0, auto;
 justify-content: center;
@@ -346,7 +366,7 @@ details{
     padding: 10px;
 }
 p{
-    color: black;
+    color: rgb(248, 246, 246);
 }
 
 .span{
@@ -381,6 +401,12 @@ section img{
 }
 
 /* Div groupes */
+
+section .group{
+    margin-left: 20%;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
 
 
 
@@ -804,15 +830,21 @@ footer .i {
     align-items: center;
     justify-content: center;
 }
+
+section  .apropos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;}
 }
 
 
 
 @media(max-width: 760px){
-.Welcom img {
+/* .Welcom img {
     display: grid;
     grid-template-columns: repeat(1fr);
-}
+} */
 
 .section-images{
     display: flex;
@@ -820,6 +852,24 @@ footer .i {
     justify-content: center;
     align-items: center;
 }
+
+
+   section .Welcom {
+        padding: 170px 20px 50px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    div.services .row{
+        display: flex;
+        flex-direction:column ;
+        align-items: center;
+        justify-content: center;
+         gap: 100px;
+}
+    }
 
 
 }
@@ -834,6 +884,11 @@ footer .i {
     height: 300px;
     padding: 20px auto;
 }
+section h2 {
+
+    font-size: 8px !important;
+}
+
 
 
 }
@@ -847,6 +902,16 @@ footer .i {
     height: 300px;
     padding: 20px auto;
 }
+
+   div.services .row{
+        display: flex;
+        flex-direction:column ;
+        align-items: center;
+        justify-content: center;
+         gap: 100px;
+         padding: 20px 30px;
+}
+ 
 
 
 }
