@@ -405,8 +405,10 @@ section img{
 section .group{
     margin-left: 20%;
     margin-bottom: 10px;
-    margin-top: -10px;
+    margin-top: -30px;
 }
+
+
 
 
 
@@ -440,7 +442,6 @@ section .group{
 
 /* FAQ */
 .faq-section {
-    /* transform: translateX(60px); */
     background-color: #444;
     max-width: 880px;
     margin: 50px auto;
@@ -538,7 +539,7 @@ div.service-title{
 div.service-title h3{
     font-size: 1.5rem;
     margin-left: 10px;
-    color: rgb(246, 243, 243);
+    color: rgb(6, 6, 6);
 }
 
 div.services p{
@@ -853,13 +854,26 @@ section  .apropos{
     align-items: center;
 }
 
+        .Welcom {
+        height: auto;
+        padding: 170px 20px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .Welcom img {
+        position: static;
+        width: 250px;
+        height: auto;
+    }
 
-   section .Welcom {
-        padding: 170px 20px 50px !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        text-align: center !important;
+        .Welcom h3 {
+        position: static;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 30px;
     }
 
     div.services .row{
@@ -869,10 +883,16 @@ section  .apropos{
         justify-content: center;
          gap: 100px;
 }
+
+
+
+   
+
+
     }
 
 
-}
+
 
 @media(max-width: 560px) {
 
@@ -880,16 +900,36 @@ section  .apropos{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 85%;
     height: 300px;
     padding: 20px auto;
 }
 section h2 {
-
-    font-size: 8px !important;
+    font-size: 16px !important;
 }
 
+    .faq-section h1 {
+   
+        font-size: 1.3rem;
+} 
+.faq-intro {
+    font-size: 14px;
+}
 
+.faq-item label {
+    font-size:0.8rem ;
+}
+
+div.service-title h3{
+    font-size: 1.2rem;
+
+    
+}
+
+div.services p{
+
+    font-size: 13px;
+}
 
 }
 
