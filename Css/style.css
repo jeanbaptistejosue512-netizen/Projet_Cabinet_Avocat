@@ -48,7 +48,7 @@ img {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+  /* font-family: 'Cinzel', 'Playfair Display', Georgia, serif; */
 }
 
 /* Header & Navbar Container */
@@ -117,9 +117,15 @@ img {
     background-image: url(../Images/image2.jpg) ;
 background-size: cover;
 background-position: center;
+
     color:  #d4af37;
     padding: 90px 10px;
 
+}
+
+.page-hero:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
 }
 
 .page-hero h1 {
@@ -244,7 +250,7 @@ height: 570px;
 
 .stats-title h2{
 color: #d4af37 ;
-    font-size:30px;
+    font-size:20px;
     font-family:Georgia, serif;
     font-weight:bold;
     transform: translateX(25px);
@@ -306,7 +312,7 @@ color: #d4af37 ;
 
 .text p{
     font-size:23px;
-    color:#191818;
+    color:#f2eeee;
 }
 
 
@@ -315,10 +321,10 @@ color: #d4af37 ;
 
 
 main.main-content{
-    width: 100%;
-    /* max-width: 1040px; */
-    margin: auto ;
-   width: min(1120px, 92%);
+    padding: auto;
+     margin: auto ;
+
+     
 
 }
 
@@ -326,26 +332,33 @@ section  .apropos{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
-    margin-top: 60px;
-    padding: 20px 10px;
+    gap: 90px;
+    padding: 10px auto;
+   
 }
 
 .section .apropos img{
-    width: 70%;
+    width: 90%;
     height: 300px;
-    margin-top: -6px;
+    border: 2px solid var(--white);
+   
+}
+
+.section .apropos img:hover{
+ transform: translatey(-6px) !important;
+    cursor: pointer;
+    border: 3px solid #b08d46;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 section h2 {
     text-align: center;
     text-transform: uppercase;
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     font-size: 1.4rem;
     color:  #d4af37;
     font-family:Georgia, serif;
-    transform: translateX(0px);
 }
 
 section p {
@@ -395,21 +408,77 @@ summary{
     max-width: 100%;
     height: 290px;
 }
-section img{
- 
+.section img{
+ margin-left: 5%;
+border-radius: 15px;
     
 }
 
-/* Div groupes */
+/* Section7 */
+.section7 {
+    padding: 82px 0;
+}
 
-section .group{
-    margin-left: 20%;
-    margin-bottom: 10px;
-    margin-top: -30px;
+.section.alt {
+    background: var(--cream);
+}
+
+.section-head {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 42px;
+}
+
+.section-head h2 {
+    font-size: 38px;
+    color: var(--navy);
 }
 
 
+/* CARDS */
 
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.card {
+    background: var(--accent-color);
+    border-radius: var(--bg-light);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.card-img {
+    height: 220px;
+}
+
+.card-body {
+    padding: 22px;
+}
+
+.card h3 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+
+/* Div groupes */
+
+
+
+
+
+ .section .group img{
+    width: 90% !important;
+   
+}
+
+.section .group img:hover{
+    transform: translateY(-9px);
+    border: 2px solid #b08d46;
+}
 
 
 .images{
@@ -419,6 +488,7 @@ section .group{
     margin: 20px 30px;
     gap: 20px;
     padding-bottom: 25px;
+    padding-top: 25px;
     background-color:#161615;
 }
 
@@ -438,6 +508,7 @@ section .group{
 
 .images li img:hover{
   transform: translatey(-5px);
+  border: 3px solid var(--white);
 }
 
 /* FAQ */
@@ -539,7 +610,7 @@ div.service-title{
 div.service-title h3{
     font-size: 1.5rem;
     margin-left: 10px;
-    color: rgb(6, 6, 6);
+    color: rgb(44, 66, 138);
 }
 
 div.services p{
@@ -548,16 +619,11 @@ div.services p{
 }
 
 .section img{
-    max-width: 100%;
-    width: 54%;
-    max-height: 100%;
-    height: 95%;
-margin-top: 10%;
-    margin-left: 10%;
     border-radius: 15px;
 }
 
 /* honoraires */
+
 .honoraires{
     padding: 50px;
     background:rgb(88, 87, 87);
@@ -617,7 +683,6 @@ section p{
 }
 
 section .contact-avocats{
-    /* transform: translateX(100px); */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
@@ -808,17 +873,7 @@ footer .i {
         display: none;
     }
 
-    /* Autres éléments responsive */
-    .cards,
-    .menu-grid,
-    .gallery,
-    .info-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .section-images {
-        grid-template-columns: 1fr;
-    }
+    
 
    
     
@@ -834,18 +889,16 @@ footer .i {
 
 section  .apropos{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+    gap: 20px;
+}
 }
 
 
 
 @media(max-width: 760px){
-/* .Welcom img {
-    display: grid;
-    grid-template-columns: repeat(1fr);
-} */
 
 .section-images{
     display: flex;
@@ -929,6 +982,14 @@ div.service-title h3{
 div.services p{
 
     font-size: 13px;
+}
+
+section p{
+    font-size: 13px;
+}
+
+.stats-container {
+    gap: 0px;
 }
 
 }
