@@ -746,6 +746,7 @@ div.services p{
 
 section .contact{
     margin-left: 3%;
+    margin-bottom: 56px;
 }
 section p{
    margin-left: 3%; 
@@ -758,6 +759,12 @@ section .contact-avocats{
 
 }
 
+.avocat{
+display: grid;
+grid-template-columns: 1fr;
+justify-items: center;
+}
+
 section .contact-avocats .avocat img {
 width: 100%;
 height: 320px;
@@ -767,6 +774,17 @@ height: 320px;
 section .contact-avocats .avocat h3,h4, h5, h5 a{
     text-decoration: none;
     color:white;
+}
+
+
+section .contact-avocats .avocat:hover{
+    transform: translateY(-6px);
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: #c7994b90;
+    border: 3px solid var(--white);
+    border-radius: 5px;
+    padding: 10px;
 }
 
 /* Formulaire */
@@ -981,6 +999,9 @@ section .contact-avocats{
     gap: 50px;
 
 }
+
+
+
 }
 
 
@@ -1028,12 +1049,11 @@ section .contact-avocats{
 
 section .contact-avocats .avocat h3,h4{
     font-size: 15px;
-    padding-left: 25px;
+  
 }
    
 section .contact-avocats .avocat h5, h5 a{
     font-size: 10px;
-    padding-left: 25px;
 
 }
 
