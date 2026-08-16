@@ -230,6 +230,56 @@ height: 570px;
     color:#d4af37 ;
 }
 
+
+.btn3{
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    display: inline-block;
+    background: #b08d46;
+    color: rgba(0, 0, 0, 0.756);
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-weight: 800;
+    border: 2px solid white;
+    transition: .2s;
+}
+
+.btn3:hover{
+    transition: 0.3s;
+    background-color: white;
+    transform: translateY(-3px);
+    border: 2px solid #c79a4b;
+    color: #c79a4b ;
+ 
+}
+
+.btn-outline{
+    position: absolute;
+    top: 75%;
+    left: 28%;
+    background: rgba(174, 101, 6, 0.5);
+    color: white;
+    font-weight: 800;
+    border-color: white;
+    margin-left: 8px;
+    padding: 10px 20px ;
+     border: 2px solid white;
+    border-radius:999px ;
+}
+
+.btn-outline:hover{
+    transform: translateY(-5px);
+    transition: 0.5s;
+    border: 2px solid #c79a4b;
+    background-color: var(--white);
+    color: #c79a4b;
+}
+
+.statis{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 .stats{
     position: absolute;
     width:200px;
@@ -376,7 +426,7 @@ align-items: center;
 }
 
 details{
-    padding: 10px;
+ padding-left: 9px;
 }
 p{
     color: rgb(248, 246, 246);
@@ -401,6 +451,7 @@ details p{
 }
 summary{
     color: white;
+    cursor: pointer;
 }
 
 
@@ -435,49 +486,67 @@ border-radius: 15px;
 }
 
 
-/* CARDS */
-
-.cards {
+/* INFO */
+.container{
+    width: min(1120px, 92%);
+    margin: auto;
+}
+.info-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 20px;
 }
 
-.card {
-    background: var(--accent-color);
-    border-radius: var(--bg-light);
-    overflow: hidden;
-    box-shadow: var(--shadow);
+
+.info-card {
+    padding: 28px;
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
 }
 
-.card-img {
-    height: 220px;
+.info-card .icon {
+    font-size: 30px;
+    cursor: pointer;
 }
 
-.card-body {
-    padding: 22px;
+.container .info-grid .info-card h3{
+   color: #b08d46;
 }
 
-.card h3 {
-    color: white;
-    margin-bottom: 8px;
+
+.info-card:hover{
+    transform: translateY(-5px);
+    transition: 3s;
+    background-color: #b08d46c8;
+    border-radius:16px ;
+    border: 3px solid var(--white);
+    color: rgba(0, 0, 0, 0.4);
 }
+
+.container .info-grid .info-card h3:hover{
+    color: rgba(0, 0, 0, 0.756);
+    cursor: pointer;
+      transition: 3s;
+}
+
+
+
 
 
 /* Div groupes */
 
 
-
-
-
  .section .group img{
     width: 90% !important;
+    border: 4px solid black;
    
 }
 
 .section .group img:hover{
     transform: translateY(-9px);
     border: 2px solid #b08d46;
+    cursor: pointer;
 }
 
 
@@ -685,15 +754,17 @@ section p{
 section .contact-avocats{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+ justify-items: center;
 
 }
 
 section .contact-avocats .avocat img {
-width: 50%;
-height: 250px;
+width: 100%;
+height: 320px;
 
 }
-section .contact-avocats .avocat h5 a{
+
+section .contact-avocats .avocat h3,h4, h5, h5 a{
     text-decoration: none;
     color:white;
 }
@@ -706,21 +777,19 @@ section .contact-avocats .avocat h5 a{
     background-image:url(../Images/image1.jpg);
     background-size: cover;
     background-position: center;
-   max-height: 100%;
-   height: 100%;
-   margin: 0%;
 }
 section .form{
     
 }
  
 section form{
+ 
     border: solid 2px #ddd;
     border-radius: 19px;
-    width:60%;
-    min-height: 10%;
+    width: 80%;
     padding: 12px;
-    background-color:  #d4af37;
+    background-color: #d4af37ba;
+    margin: 30px auto;
 }
 
 .form label{
@@ -751,28 +820,34 @@ form input[type='text'], form input[type='email'], form input[type='tel'],form i
 
 form input[type='submit']{
     font-size: 1.3rem;
-    font-weight: bold;
+    font-weight: 800;
     text-transform: capitalize;
+    text-align: center;
     border: none;
     background-color: #fff;
     color: rgba(0, 0, 0, 0.662);
     padding: 10px 24px;
+    border: 3px solid rgba(0, 0, 255, 0.539);
     border-radius: 2rem;
     transition: 0.2s;
-
-margin-left: 35%;
-margin-right: 20%;
 margin-top: 5px;
+transform: translateX(20px);
+margin-left: 40%;
 }
 
 form input[type='submit']:hover{
-    background-color: darkgray;
+    background-color:#000000b0;
+    color: var(--white);
+    transform: translateY(-3px);
+    transition: 0.5s;
+    border: 3px solid var(--white);
 }
 
 .sectionform h2{
     transform: translateX(-10px);
     color: rgba(0, 0, 0, 0.662);
-    padding: 2;
+    padding: 2px;
+    font-weight: 800;
     font-family: sans-serif;
     font-size: 1.4rem;
 margin-bottom: 15px;
@@ -873,7 +948,6 @@ footer .i {
         display: none;
     }
 
-    
 
    
     
@@ -894,17 +968,30 @@ section  .apropos{
     justify-content: center;
     gap: 20px;
 }
-}
 
+section .contact-avocats{
+
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+     grid-auto-flow: row;
+    align-content: center;
+    justify-items: center;
+    gap: 50px;
+
+}
+}
 
 
 @media(max-width: 760px){
 
 .section-images{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
-    align-items: center;
+    justify-items: center;
+    justify-items: center;
 }
 
         .Welcom {
@@ -935,12 +1022,53 @@ section  .apropos{
         align-items: center;
         justify-content: center;
          gap: 100px;
+         
+}
+
+
+section .contact-avocats .avocat h3,h4{
+    font-size: 15px;
+    padding-left: 25px;
+}
+   
+section .contact-avocats .avocat h5, h5 a{
+    font-size: 10px;
+    padding-left: 25px;
+
+}
+
+.btn3{
+    position: static;
+}
+
+.btn-outline{
+    position: static;
+    margin-top: 10px;
 }
 
 
 
+    .faq-section h1 {
    
+        font-size: 1.3rem;
+} 
+.faq-intro {
+    font-size: 14px;
+}
 
+.faq-item label {
+    font-size:0.8rem ;
+}
+
+.info-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: stretch;
+    align-items: stretch;
+    justify-items: stretch;
+    align-content: center;
+
+}
 
     }
 
@@ -953,7 +1081,7 @@ section  .apropos{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 85%;
+    width: 90%;
     height: 300px;
     padding: 20px auto;
 }
@@ -992,6 +1120,19 @@ section p{
     gap: 0px;
 }
 
+
+
+.ligne span{
+    font-size: 10px;
+}
+
+form input[type='submit']{
+    margin-left: 25%;
+}
+
+ 
+
+
 }
 
 
@@ -1009,11 +1150,15 @@ section p{
         flex-direction:column ;
         align-items: center;
         justify-content: center;
-         gap: 100px;
+        gap: 55px;
          padding: 20px 30px;
 }
- 
 
+.ligne span{
+    font-size: 8px;
+}
+ 
+ 
 
 }
 
