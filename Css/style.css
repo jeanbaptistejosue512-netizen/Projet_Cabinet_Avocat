@@ -48,9 +48,14 @@ img {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'Cinzel', 'Playfair Display', Georgia, serif; */
 }
 
+.menu-toggle{
+    background: transparent;
+    color: white;
+    font-size: 25px;
+    border: none;
+}
 /* Header & Navbar Container */
 .navbar-header{
   background: #0d0d0d;
@@ -162,7 +167,7 @@ border-top: 2px solid #d4af37;
 }
 
 .main-title h1{
-    font-size: 25px;
+    font-size: 17px;
 }
 
 
@@ -1136,10 +1141,13 @@ footer p a{
 
 
 footer .i {
-    margin-left:50%;
-    transform: translateX(0px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
     cursor: pointer;
     color:  #d4af37;
+    padding-bottom: 10px;
 }
 
 
@@ -1153,9 +1161,9 @@ footer .i {
     .menu-toggle {
         display: block;
         border: none;
-        background: #d4af37;
+        background: transparent;
         font-size: 30px;
-        color: var(--navy);
+        color: white;
         cursor: pointer;
         z-index: 100;
     }
