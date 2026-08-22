@@ -393,8 +393,8 @@ section  .apropos{
 }
 
 .section .apropos img{
-    width: 90%;
-    height: 300px;
+    width: 70%;
+    height: 380px;
     border: 2px solid var(--white);
    
 }
@@ -672,6 +672,7 @@ border-radius: 15px;
     border-radius: 5px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
 .temoignage-card:hover {
@@ -1029,14 +1030,11 @@ section .contact-avocats .avocat:hover{
 
 
 
- .sectionform{
+ /* .sectionform{
     background-image:url(../Images/image1.jpg);
     background-size: cover;
     background-position: center;
-}
-section .form{
-    
-}
+} */
  
 section form{
  
@@ -1403,6 +1401,12 @@ section .contact-avocats .avocat h5, h5 a{
     height: 300px;
     padding: 20px auto;
 }
+
+
+.section .apropos img {
+    width: 70%;
+    height: 300px;
+
 section h2 {
     font-size: 16px !important;
 }
